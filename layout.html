@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>London</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background: url(Tower_Bridge_from_Shad_Thames.jpg) no-repeat center;
+  background-size: cover;
+  text-shadow: 3px 2px black;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+margin: none;
+width: auto;
+background-color: steelblue;
+overflow: auto;
+}
+
+/* Style the list inside the menu */
+ul {
+margin: 0;
+padding: 0;
+list-style: none;
+text-align: center;
+}
+
+li {
+  display: inline-block;
+  text-align: center;
+}
+
+a:link {
+  color: white;
+  width: auto;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 17px;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:hover {
+  background-color: cornflowerblue;
+}
+
+a:visited {
+  color: white;
+}
+
+img {
+  image-resolution: 100%;
+  width: 7pc;
+  height: 7pc;
+}
+
+div {
+  float: left;
+  width: 25%;
+  height: 300px;
+  background: gainsboro;
+  padding: 8px;
+}
+
+button {
+  float: none;
+  margin: 3px;
+  width: 97.5%;
+  height: auto;
+  text-align: center;
+  display: inline-block;
+  background-color: steelblue;
+}
+
+button:hover {
+  background-color: cornflowerblue;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 75%;
+  background-color: whitesmoke;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: steelblue;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article, footer, div, button {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  article {
+    font-size: smaller;
+  }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <h2>Cities</h2>
+</header>
+<nav>
+  <ul>
+    <li><a href="layout.html" title="about London">home</a></li>
+    <li><a href="#" id="history">history</a></li>
+    <li><a href="#" id="administration">administration</a></li>
+    <li><a href="#" id="geography">geography</a></li>
+  </ul>
+</nav>
+
+<section>
+<div>
+    <button><a href="layout.html">London</a></button>
+    <button><a href="paris.html">Paris</a></button>
+    <button><a href="tokyo.html">Tokyo</a></button>
+    <img src="earth logo.png" style="display:block; margin: auto;">
+</div>
+
+  <article>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+
+  </article>
+</section>
+
+<script src="layout.js"></script>
+
+<footer>
+  <p><span>&copy<span> Dafa Al Farezi.</p>
+</footer>
+</body>
+</html>
